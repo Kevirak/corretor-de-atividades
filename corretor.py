@@ -8,14 +8,14 @@ def main():
 
     for i in range(10):
         string1 = input(f"Digite a {i + 1}ª resposta: ")
-        string1.upper()
+        string1 = string1.upper()
         lista1.append(string1)
 
     print("\nAgora, insira as alternativas corretas da lista:")
     for i in range(10):
         string2 = input(
             f"{i + 1}ª questão. Você respondeu [{lista1[i]}], o correto é: ")
-        string2.upper()
+        string2 = string2.upper()
         lista2.append(string2)
 
     # Mostrar as duas listas lado a lado
